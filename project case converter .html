@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: #ffbb0071;
+        border: 7px solid rgba(0, 0, 0, 0.37);
+    }
+
+    #heading {
+        margin-top: 30px;
+        color: rgba(0, 0, 0, 0.746);
+        text-align: center;
+        font-family: 'Road Rage', cursive;
+
+    }
+
+    #case {
+        color: rgb(255, 70, 37);
+font-weight: 900px;
+        font-size: 50px;
+        font-family: 'Yuji Boku', serif;
+    }
+
+    #text {
+        background-color: rgba(255, 99, 71, 0.274);
+        font-family: 'Road Rage', cursive;
+        padding: 2px;
+        font-size: 20px;
+        border: cornsilk 1px solid;
+        margin-left: 21%;
+        margin-right: 21%;
+        width: 700px;
+        height: 150px;
+    }
+
+    #select { 
+        border: cornsilk 1px solid;
+        background-color: burlywood;
+        margin-top: 13px;
+        margin-left: 262px;
+        padding: 5px;
+        height: 33px;
+        width: 120px;
+        font-family: 'Road Rage', cursive;
+    }
+
+    .run {
+        font-size: 10px;
+        border: cornsilk 1px solid;
+        background-color: burlywood;
+        font-weight: bold;
+        height: 32px;
+        width: 136px
+    }
+    .contant{
+        
+        margin-top: 15px;
+        font-family: 'Road Rage', cursive;
+        background-color: white;
+        padding: 2px;
+        font-size: 40px;
+        border: cornsilk 1px solid;
+        margin-left: 21%;
+        margin-right: 21%;
+        width: 700px;
+        height: 150px;
+        background-color: rgba(255, 99, 71, 0.274);
+    }
+
+   
+</style>
+
+<body>
+
+    <h1 id="heading">WELCOME TO ONLINE <div id="case">case</div>CONVERTER</h1>
+
+    <input type="text" id="text" class="iteam">
+
+
+    <select id="select" class="iteam">
+        <option value="uppercase">UPPERCASE</option>
+        <option value="lowercase">lowercase</option>
+    </select>
+
+
+    <button class="run" onclick="show()" class="iteam"> RUN</button>
+
+
+    <div class="contant" class="iteam"></div>
+
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
+
+
+
+
+
+
+
+    <script>
+        function show() {
+            select = document.querySelector("#select").value
+            console.log(select)
+            text = document.querySelector("#text").value
+            contant = document.querySelector(".contant")
+
+            if (select == "uppercase") {
+
+                upperText = text.toLocaleUpperCase()
+                console.log(upperText)
+
+                contant.innerHTML = upperText
+            }
+            else if (select == "lowercase") {
+                lowerText = text.toLowerCase()
+                console.log(lowerText)
+
+                contant.innerHTML = lowerText
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
